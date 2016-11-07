@@ -34,7 +34,7 @@
           <li><a href="Accesories.jsp">ACCESORIES</a></li>
         </ul>
       </li>
-      <li><a href="about us.jsp">about</a></li> 
+      <li><a href="aboutus.jsp">about</a></li> 
       <li><a href="contact.jsp">contact us</a></li> 
     </ul>
     <ul class="nav navbar-nav navbar-right">
