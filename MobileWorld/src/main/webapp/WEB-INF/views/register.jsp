@@ -1,7 +1,7 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-
+<jsp:include page="/WEB-INF/views/header.jsp"/>
 
 
 		<form:form class="form-horizontal" method="post" action="register"	command="Register" >
@@ -86,7 +86,7 @@
 
 			</fieldset>
 		</form:form>
-
+<jsp:include page="/WEB-INF/views/footer.jsp"/>
 	
 	
 

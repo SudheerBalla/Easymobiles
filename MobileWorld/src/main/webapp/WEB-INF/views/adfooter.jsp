@@ -16,11 +16,9 @@
 <body>
 
 
-<html>
-<body>
 
-</div>
-<div class="navbar navbar-inverse " role="navigation">
+<body>
+<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
 <div class="container">
 <div class="navbar-text pull-left">
 	<p>@2016 All Rights Reserved</p>
@@ -31,6 +29,7 @@
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
 <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
 <a href="#"><i class="fa fa-google fa-2x"></i></a>
+</div>
 </div>
 </body>
 </html>

@@ -29,16 +29,16 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="product.jsp">MOBILES</a></li>
-          <li><a href="Accesories.jsp">ACCESORIES</a></li>
+          <li><a href="product">MOBILES</a></li>
+          <li><a href="Accesories">ACCESORIES</a></li>
         </ul>
       </li>
-      <li><a href="about us.jsp">about</a></li> 
-      <li><a href="contact.jsp">contact us</a></li> 
+      <li><a href="about us">about</a></li> 
+      <li><a href="contact">contact us</a></li> 
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="signup.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>

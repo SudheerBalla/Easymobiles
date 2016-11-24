@@ -35,14 +35,14 @@
       </div>
 
       <div class="item">
-        <center><img src="D:\mobilephotos\s7edge.jpg" alt="Chania" width="460" height="345"></center>
+        <center><img src="D:\mobilephotos\s7edge.jpg" alt="samsung" width="460" height="345"></center>
         <div class="carousel-caption">
           <h3>Samsung</h3>
         </div>
       </div>
     
       <div class="item">
-       <center><img src="D:\mobilephotos\htc-one-m9-profile.jpg" alt="Flower" width="460" height="345"></center>
+       <center><img src="D:\mobilephotos\htc-one-m9-profile.jpg" alt="Htc" width="460" height="345"></center>
         <div class="carousel-caption">
           <h3>Htc</h3>
          
@@ -51,9 +51,10 @@
 
       <div class="item">
        
+        <div class="item">
+        <center><img src="D:\mobilephotos\lenovo-note-k4.png" alt="lenovo" width="460" height="345"></center>
         <div class="carousel-caption">
           <h3>Lenovo</h3>
-          <p>Camera phone</p>
         </div>
       </div>
      
