@@ -26,6 +26,7 @@ public class Category implements Serializable{
 		return cid;
 	}
 	public void setCid(String cid) {
+		System.out.println("setttttttttttttttttttttttter catidddddddddddddddddddddd");
 		this.cid = cid;
 	}
 	@Column (name="cname")

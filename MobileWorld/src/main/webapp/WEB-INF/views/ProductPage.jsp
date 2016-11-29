@@ -23,7 +23,7 @@
 <c:choose>
 <c:when test="${check}">
 	<div class="row">
-		<form:form class="form-horizontal" method="post" action="addproduct"	commandName="Product">
+		<form:form class="form-horizontal" method="post" action="addproduct"	commandName="Product" enctype="multipart/form-data">
 			<fieldset>
 
 				<!-- Form Name -->
@@ -99,11 +99,14 @@
 
 					</div>
 				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="econLimOil">Image</label>
+					<div class="col-md-5">
+						 <form:input type="file" path="pimage"/>
+
+					</div>
+				</div>
 				
-				
-			
-				
-			
 
 				<!-- Button -->
 				<div class="form-group">
@@ -232,9 +235,11 @@ search:<input type="text" placeholder="search category" ng-model="searchprd"/>
 <th>Price</th>
 <th>Edit</th>
 <th>Delete</th>
-
+<th>Image</th>
 </tr> 
 <tr class="success" ng-repeat="ad in product|filter:searchprd">
+                 
+
                 <td>{{ad.pid}}</a></td> 
                  <td>{{ad.pname}}</td>
                 <td>{{ad.supId}}</td>
@@ -243,7 +248,7 @@ search:<input type="text" placeholder="search category" ng-model="searchprd"/>
                 <td> {{ad.pprice}}</td>
                      <td><a href="Updateprod?pid={{ad.pid}}">Edit</a></td>
                 <td><a href="deleteprod?pid={{ad.pid}}">Delete</a></td>
-                 
+                 <td><img src="./resources/images/{{ad.pid}}.jpg" height="50px" width="50px"/></td>
 </tr>
 </table>
 </div>

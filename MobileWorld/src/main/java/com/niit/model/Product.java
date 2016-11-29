@@ -7,8 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
 
 
 @Entity
@@ -31,11 +33,24 @@ public class Product implements Serializable {
 	private String supId;
 	@Column
 	private String catId;
+	@Transient
+	private MultipartFile pimage;
 	
+	public MultipartFile getPimage() {
+		return pimage;
+	}
+	public void setPimage(MultipartFile pimage) {
+		System.out.println("setter of imageeeeeeeeeeeeeeeeeeeeeeee ");
+		System.out.println(pimage);
+		this.pimage = pimage;
+	}
 	public String getPid() {
 		return pid;
 	}
 	public void setPid(String pid) {
+		System.out.println("setter of iidddddddddddddddddddddd ");
+		
+		
 		this.pid = pid;
 	}
 	public String getPname() {

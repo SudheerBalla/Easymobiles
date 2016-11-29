@@ -1,10 +1,15 @@
 package com.niit.controller;
 
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.dao.CategoryDao;
@@ -57,6 +62,34 @@ public class ProductController {
 		System.out.println("in addAdminProduct post6"+prd);
 		
 		System.out.println("in addAdminProduct post7");
+		String path="C:\\Users\\Sudhee\\git\\mobiles\\MobileWorld\\src\\main\\webapp\\WEB-INF\\resources\\images\\";
+		path=path+String.valueOf(aprod.getPid())+".jpg";
+		System.out.println("in addProduct post8");
+		File f=new File(path);
+		System.out.println("in addProduct post9");
+		System.out.println("in addProduct post9"+prd);
+		MultipartFile filedet=aprod.getPimage();
+		System.out.println("in addProduct post10"+filedet);
+		if(!filedet.isEmpty())
+		{
+			System.out.println("in addProduct post10");
+			try
+			{
+				System.out.println("before getbytes");
+				System.out.println(filedet);
+			  byte[] bytes=filedet.getBytes();
+			  System.out.println(bytes.length);
+			  FileOutputStream fos=new FileOutputStream(f);
+              			BufferedOutputStream bs=new BufferedOutputStream(fos);
+              			bs.write(bytes);
+              			bs.close();
+             			 System.out.println("File Uploaded Successfully");
+			}
+			catch(Exception e)
+			{
+				System.out.println("Exception Arised"+e);
+			}
+		}
 		 return mv;
 		
 	}
