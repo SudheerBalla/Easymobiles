@@ -16,40 +16,24 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-	<div class="page-header">
-		<div id="logo">
-			<div class="col-sm-3"></div>
-			<h2 style="color: black;">
-				<center>
-					<img src="D:\mobilephotos\logo.png" alt="bmlogo" width="100"
-						height="100" padding:200px 200px>EASY MOBILES
-				</center>
-			</h2>
 
-
-		</div>
-	</div>
-
-
-
-
-
-	</div>
-	<style>
-body {
-	background-color: cyan;
+	 <style>body{
+background-image:url(./resources/images/back1.jpg);
 }
 </style>
+</head>
+<body>
+  <div class="row" style="padding-bottom: 50px; text-align: center;">
+  <img src="./resources/images/logo.png" alt="bmlogo" width="100" height="100">           
+  </div>
 
-
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-default"style="background-color: #004d3d; bottom:50px; border:0px;">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#">MOBILES</a>
 			</div>
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
+			<ul class="nav navbar-nav nav-tabs " style="border: none;">
+				<li class="active"><a href="admin">Home</a></li>
 				<li class="dropdown"><a class="dropdown-toggle"
 					data-toggle="dropdown">PRODUCTS <span class="caret"></span></a>
 					<ul class="dropdown-menu">
@@ -72,12 +56,12 @@ body {
 						<li><a href="SupplierPage">UPDATE</a></li>
 						<li><a href="SupplierPage">DELETE</a></li>
 					</ul></li>
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav nav-tabsnavbar-right nav-tabs"style="border: none;">
 					<li><a href="register"><span
-							class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+							class="glyphicon glyphicon-user"></span> Sign Out</a></li>
 					<li><a href="login"><span
 							class="glyphicon glyphicon-log-in"></span> Login</a></li>
-
+</ul>
 				</ul>
 		</div>
 	</nav>

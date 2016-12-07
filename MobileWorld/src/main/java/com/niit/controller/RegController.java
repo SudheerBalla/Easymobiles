@@ -34,13 +34,8 @@ public class RegController {
         // implement your own registration logic here...
          
         // for testing purpose:
-        System.out.println("username: " + reg.getuname());
-        System.out.println("password: " + reg.getUpassword());
-        System.out.println("useradd: " + reg.getUadd());
-        System.out.println("usermobno: " + reg.getUmobno());
-        System.out.println("useremail: " + reg.getUemailid());
-        System.out.println("userid: " + reg.getuId());
-       // System.out.println("email: " + user.getEmail());
+        System.out.println("username: " + reg.getUserName());
+        System.out.println("password: " + reg.getPassword());
        
         
         indao.insertData(reg);

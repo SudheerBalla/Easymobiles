@@ -32,14 +32,15 @@ search:<input type="text" placeholder="search products" ng-model="searchprd"/>
 <th>Product name</th>
 <th>Stock</th>
 <th>Price</th>
-<th></th>
+<th>Image</th>
 </tr> 
 <tr class="success" ng-repeat="ad in product|filter:searchpro">
                 <td>{{ad.pid}}</a></td> 
                  <td>{{ad.pname}}</td>
                 <td> {{ad.pstock}}</td>
                 <td> {{ad.pprice}}</td>
-                     <td><a href="moreinfo">See More Info </a></td>
+                <td><img src="./resources/images/{{ad.pid}}.jpg" height="75px" witdh="75px" /></td>
+                     <td><a href="userproduct?pid={{ad.pid}}">See More Info </a></td>
                  
 </tr>
 </table>

@@ -62,7 +62,7 @@ public class ProductController {
 		System.out.println("in addAdminProduct post6"+prd);
 		
 		System.out.println("in addAdminProduct post7");
-		String path="C:\\Users\\Sudhee\\git\\mobiles\\MobileWorld\\src\\main\\webapp\\WEB-INF\\resources\\images\\";
+		String path="C:\\Users\\Sudhee\\git\\mobiles\\MobileWorld\\src\\main\\webapp\\resources\\images\\";
 		path=path+String.valueOf(aprod.getPid())+".jpg";
 		System.out.println("in addProduct post8");
 		File f=new File(path);

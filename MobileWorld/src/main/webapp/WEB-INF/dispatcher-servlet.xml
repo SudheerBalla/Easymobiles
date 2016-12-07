@@ -11,7 +11,7 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd
 http://www.springframework.org/schema/webflow-config
 http://www.springframework.org/schema/webflow-config/spring-webflow-config.xsd">
  <mvc:annotation-driven/>
-  <mvc:resources mapping="/resources/**" location="\WEB-INF\resources\images" />
+  <mvc:resources mapping="/resources/**" location="./resources/images" />
  <context:component-scan base-package="com.niit.controller" />
  
  
@@ -24,7 +24,7 @@ http://www.springframework.org/schema/webflow-config/spring-webflow-config.xsd">
  </property>
  </bean>
  <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<property name="maxUploadSize" value="100000" />
+		<property name="maxUploadSize" value="1000000" />
 </bean>
  
 </beans>

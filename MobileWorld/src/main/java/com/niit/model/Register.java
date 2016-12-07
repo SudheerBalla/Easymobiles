@@ -1,98 +1,82 @@
 package com.niit.model;
 
+
 import java.io.Serializable;
 
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Transient;
-
 import org.springframework.stereotype.Component;
 
 @Entity
 @Table
 @Component
 public class Register implements Serializable {
-	
 	@Id
-	@GeneratedValue
-	@Column(name = "uId")
-	private int uId;
+	
+	@Column(name = "userId")
+	private int userId;
+	
+	@Column(name = "name")
+	private String name;
+	
+	@Column(name = "userName")
+	private String userName;
+	
+	@Column(name = "password")
+	private String password;
+	
+	@Column(name = "mobile")
+	private String mobile;
 	
 	
-	public int getuId() {
-		return uId;
+	@Column(name = "email")
+	private String email;
+	@Column
+	public String role="user";
+	public int getUserId() {
+		return userId;
 	}
-	public void setuId(int uId) {
-		this.uId = uId;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
-	public String getuname() {
-		return uname;
+	public String getName() {
+		return name;
 	}
-	public void setuname(String uname) {
-		this.uname = uname;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getUpassword() {
-		return upassword;
+	public String getUserName() {
+		return userName;
 	}
-	public void setUpassword(String upassword) {
-		this.upassword = upassword;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
-	public String getUmobno() {
-		return umobno;
+	public String getPassword() {
+		return password;
 	}
-	public void setUmobno(String umobno) {
-		this.umobno = umobno;
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	public String getUemailid() {
-		return uemailid;
+	public String getMobile() {
+		return mobile;
 	}
-	public void setUemailid(String uemailid) {
-		this.uemailid = uemailid;
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
 	}
-	@Column(name = "uname")
-	private String uname;
-	
-	@Column(name = "upassword")
-	private String upassword;
-	
-	@Column(name = "umobno")
-	private String umobno;
-	
-	@Column(name="uadd")
-	private String uadd;
-	
-	public String getUadd() {
-		return uadd;
+	public String getEmail() {
+		return email;
 	}
-	public void setUadd(String uadd) {
-		this.uadd = uadd;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	@Column(name = "uemailid")
-	private String uemailid;
-	
-	
-	@Transient
-	private String role;
-	@Transient
-	private boolean enabled;
-	
 	public String getRole() {
 		return role;
 	}
 	public void setRole(String role) {
 		this.role = role;
 	}
-	public boolean getEnabled() {
-		return enabled;
-	}
-	public void setEnabled(boolean enabled) {
-		this.enabled = enabled;
-	}
 }
-	
-	
 	

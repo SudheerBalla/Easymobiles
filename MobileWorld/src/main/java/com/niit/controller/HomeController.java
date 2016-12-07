@@ -26,10 +26,10 @@ public HomeController() {
 	// TODO Auto-generated constructor stub
 }
 	
-	@RequestMapping("/home")
+	@RequestMapping("/index")
 	public String home()
 	{
-	return "home";	
+	return "index";	
 	}
 	
 	@RequestMapping("/login")
